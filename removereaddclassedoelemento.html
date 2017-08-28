@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <style>
+       .teste1 {
+           background-color: blue;
+       }
+       .teste3 {
+           background-color: red;
+       }
+
+       </style>
+</head>
+
+<body>
+
+     <h1 class="teste1"> Elemento com a Classe a ser removida </h1>
+     <h1 class="teste2"> Elemento com a Classe a ser add </h1>
+    
+    <button onclick="removerclasse()">Remover Classe</button>
+    <button onclick="addclasse()">Add Classe</button>
+    <button onclick="addremoveusingtoggle()">Using Toggle</button>
+
+<script>
+    function removerclasse(){
+        document.getElementsByClassName("teste1")[0].classList.remove("teste1");
+    }
+    function addclasse(){
+        document.getElementsByClassName("teste2")[0].classList.add("teste1");
+    }
+    function addremoveusingtoggle(){
+        document.getElementsByClassName("teste1")[0].classList.toggle('teste3');
+    }
+    </script>
+</body>
+</html>    
